@@ -12,4 +12,9 @@ proximo_conteudo = arquivo.readline()
 print("Próximo Conteúdo retornado:")
 print(repr(proximo_conteudo))
 
+proximo_conteudo1 = arquivo.readline()
+
+print("Próximo Conteúdo retornado:")
+print(repr(proximo_conteudo1))
+
 arquivo.close()

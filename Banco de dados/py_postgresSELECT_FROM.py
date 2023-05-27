@@ -1,0 +1,11 @@
+import psycopg2
+conn = psycopg2.connect(database = "postgres", user = "postgres", password = "Dh9o8lu9ii@", host = "127.0.0.1", port = "5432")
+print("Conexão com o Banco de Dados aberta com sucesso!")
+cur = conn.cursor()
+cur.execute('''SELECT * FROM AGENDA;''')
+registro = cur.fetchone()
+print(registro)
+conn.commit()
+print("Seleçao realizada com sucesso!")
+cur.close()
+conn.close()

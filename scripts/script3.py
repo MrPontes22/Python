@@ -1,4 +1,4 @@
-arquivo = open("dados.txt")
+arquivo = open("teste.txt")
 
 print("Nome do arquivo:", arquivo.name)
 print("Modo do arquivo:", arquivo.mode)
